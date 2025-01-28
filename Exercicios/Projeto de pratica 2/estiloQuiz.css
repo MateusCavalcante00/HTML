@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "quiz";
+    src: url(fonts/Ampher.ttf);
+}
+
+h1 {
+    font-family: "quiz", serif;
+    font-size: 3em;
+}
+
+.titulo {
+    text-align: center;
+    background-color: rgb(228, 233, 236);
+    height: 20vh;
+    border-radius: 10px;
+}
+
+.titulo img {
+    position: absolute;
+    right: 0;
+
+}
+
+.titulo input {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(252, 255, 57, 0.781);
+    box-shadow: none;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#quiz {
+    max-width: 600px;
+    padding: 10px;
+    text-align: left;
+    margin: auto;
+}
+
+.correta {
+    background-color: rgba(70, 145, 70, 0.733);
+    color: white;
+}
+
+.errada {
+    background-color: rgba(172, 80, 80, 0.849);
+    color: white;
+}
+
+#quest {
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    background-color: white;
+}
+
+p {
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkslategray;
+            margin: 0px;
+        }
+        header > h1{
+            text-shadow: 10px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            text-align: left;
+            margin-bottom: 50px;
+        }
+
+        nav {
+            background-color: rgb(206, 203, 203);
+            border-radius: 4px;
+            padding: 3px;  
+            box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.445);    
+        }
+
+        nav>a {
+            color: rgb(61, 61, 61);
+            text-decoration: none;
+            padding: 3px;
+            margin: 20px;
+        }
+
+        nav>a:hover {
+            color:  rgb(35, 59, 59);
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            width: 600px;
+            height: 300px;
+            text-align: justify;
+            margin: auto;
+            border-radius: 7px 7px 2px 2px;
+            box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.26);
+        }
+
+        article {
+            background-color: rgb(206, 203, 203);
+            padding: 10px;
+        }
+
+        article>aside {
+            background-color: rgb(119, 119, 119);
+            padding: 2px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 60px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-style: italic;
+            padding: 1px;
+        }
+
+        footer > p{
+            margin:  0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Este é o meu site</h1>
+        <nav>
+            <a href="#">
+                Link 1
+            </a>
+            <a href="#">
+                Link 2
+            </a>
+            <a href="#">
+                Link 3
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Alta do dólar</p>
+        </section>
+        <section>
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fugiat consequatur, deserunt neque
+                    tempora, eaque repudiandae maiores nostrum sed enim recusandae cupiditate accusamus est explicabo
+                    natus suscipit eum perspiciatis. Quisquam!</p>
+                <aside>
+                    <p>Autor: Mateus Cavalcante</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Mateus Cavalcante
+    </footer>
+</body>
+
+</html>

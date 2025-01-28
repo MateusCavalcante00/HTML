@@ -1,0 +1,29 @@
+.conteiner{
+    border-radius: 7%;
+    background-color: rgb(197, 5, 5);
+    padding: 20px;
+    max-width: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Mantém os elementos em coluna */
+    align-items: flex-start;
+    gap: 7px;
+}
+.conteiner h1{
+    font-size: 50px;
+    color: rgb(218, 224, 230);
+}
+.conteiner h2{
+    font-size: 30px;
+    color: rgb(218, 224, 230);
+}
+.conteiner p{
+    text-align: justify;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+.conteiner li a {
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+}
+

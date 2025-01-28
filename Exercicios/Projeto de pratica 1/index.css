@@ -1,0 +1,82 @@
+body{
+    background-color: #0c1927;
+
+}
+.content {
+    text-align: left; 
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.content h1 {
+    font-size: 80px;
+    color: antiquewhite;
+}
+.content h2{
+    color: rgb(238, 234, 230);
+}
+
+.content .editor{
+   font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    color: rgb(238, 234, 230);
+}
+
+.skyrim img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content2{
+    text-align: justify; 
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px;
+} 
+.content2 img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.content2 ol {
+    padding-left: 40px; /* Adiciona espaçamento para a lista ordenada */
+}
+.content2 .prev-list{
+    margin-top: 20px;
+}
+
+.content2 li {
+    margin-top: 5%;
+    font-weight: bold; /* Mantém o estilo forte nos títulos das listas */ /* Adiciona espaço entre os itens da lista */
+    font-size: 27px;
+    color: antiquewhite;
+}
+
+.content2 p {
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(238, 234, 230);
+    text-align: justify;
+}
+.content2 .gamepass{
+    color: rgb(238, 234, 230);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+
+}
+
+.content2 ol img{
+    margin-bottom: 20px;
+}
+.content2 abbr{
+    text-decoration: none; 
+    border-bottom: none; 
+    cursor: default;
+    color: rgb(204, 203, 202);
+}
+.desc{
+    color: aliceblue;
+}
+

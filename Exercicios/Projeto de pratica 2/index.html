@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz One Piece</title>
+    <link rel="shortcut icon" href="icone/jullyRoger.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estiloQuiz.css">
+</head>
+
+<body>
+    <main>
+        <div class="titulo">
+            <img src="imagens/luffy250-2.png" alt="luffy-gear-5">
+            <h1>Quiz One Piece</h1>
+            <input id="botao" type="button" value="Iniciar Quiz" onclick="verificarResposta()">
+        </div>
+    </main>
+    <script>
+        function verificarResposta() {
+
+            let botao = document.querySelector('#botao');
+            botao.remove();
+
+            let perguntas = [
+                "1 - Quem foi o terceiro tripulante a entrar no bando do Chapéu de Palha?",
+                "2 - Qual o arco do anime que mostra o desaparecimento de Sabo?",
+                "3 - Qual o nome da akuma no mi do Barba Negra?",
+                "4 - O que é laboon?",
+                "5 - Quando saiu para o mar, luffy tinha quantos anos?",
+                "6 - De que mar veio o Shanks?",
+                "7 - No arco de Thriller Bark, Zoro ganha uma espada do zumbi do Ryuma. Qual o nome da espada?",
+                "8 - Qual a comida preferida do Chopper?",
+                "9 - Qual o nome do navio do Barba Branca?",
+                "10 - Quantos tripulantes do bando do Chapéu de Palha usam haki?"
+            ];
+            let respostas = [
+                "Nami",
+                "Dressrosa",
+                "Yami Yami no mi",
+                "Baleia que está na entrada da Grand Line",
+                "17",
+                "North Blue",
+                "Shusui",
+                "Algodão doce",
+                "Moby Dick",
+                "3"
+            ];
+            let opcoes = [
+                ["Sanji", "Nami", "Brook", "Ussop"],
+                ["Whole Cake", "Alabasta", "Zoo", "Dressrosa"],
+                ["Mera Mera no mi", "Yami Yami no mi", "Ope Ope no mi", "Gomu Gomu no mi"],
+                ["Divisão da marinha no Novo Mundo", "Ilha vizinha a sabaody", "Baleia que está na entrada da Grand Line", "Cidade de skypea"],
+                ["16", "17", "19", "15"],
+                ["East Blue", "South blue", "North Blue", "Notheast Blue"],
+                ["Enma", "Shusui", "Shisai", "Zurui"],
+                ["Pizza", "Carne", "Tangerina", "Algodão doce"],
+                ["Sunny", "Oro jackson", "Moby Dick", "Holandes voador"],
+                ["0", "2", "1", "3"]
+            ]
+
+            const conteiner = document.createElement('div');
+            conteiner.setAttribute('id', 'quiz');
+            document.body.appendChild(conteiner);
+
+            for (let i = 0; i < perguntas.length; i++) {
+                let arrayOp = opcoes[i];
+
+                const questaoDiv = document.createElement('div');
+                questaoDiv.classList.add('pergunta');
+
+
+                const h2 = document.createElement('h2');
+                h2.setAttribute('id', 'quest');
+                h2.textContent = `${perguntas[i]}`
+                conteiner.appendChild(h2);
+
+                conteiner.appendChild(document.createElement('hr'));
+
+                for (let opcao of arrayOp) {
+
+                    let p = document.createElement('p');
+                    p.textContent = `${opcao}`
+                    questaoDiv.appendChild(p);
+
+                    p.addEventListener('click', function () {
+
+                        p.style.pointerEvents = 'none'
+
+                        const divEvento = questaoDiv.querySelectorAll('p');
+
+                        divEvento.forEach((opcao) => {
+
+                            if (opcao.textContent === respostas[i]) {
+                                opcao.classList.add('correta');
+                            }
+
+                            if (p.textContent !== respostas[i]) {
+                                p.classList.add('errada')
+                            }
+
+                        })
+                    })
+                    conteiner.appendChild(questaoDiv)
+                }
+                conteiner.appendChild(document.createElement('br'));
+            }
+        }
+    </script>
+</body>
+
+</html>

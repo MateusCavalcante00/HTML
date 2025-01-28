@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/praia2-p.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/praia2-m.jpg" type="image/png">
+        <img src="imagens/praia2-g.jpg" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <audio preload="metadata"  controls loop>
+        <source src="midia/ride-everet almond.mp3" type="audio/mpeg">
+    </audio>
+    <p>Se o audio não funcionar, <a href="midia/ride-everet almond.mp3" download="ride-everet almond">clique aqui para download.</a></p>
+    <h1>Reproduzindo videos em HTML5</h1>
+    <p>Video hospedando localmente.</p>
+    <video controls width="560" poster="imagens/Fire02.jpg">
+        <source src="midia/fogo2.mp4"  type="video/mp4">
+        <source src="midia/fogo3.webm" type="video/webm">
+        <source src="midia/fogo4.ogv" type="video/ogg">
+    </video>
+    <h1>Inserindo video do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HqAw_jGoEkI?si=lLI8VSMabD_vqD7z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo video do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/257399106?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="ANIMATION REEL"></iframe>
+</body>
+</html>
