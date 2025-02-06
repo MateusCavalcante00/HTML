@@ -22,15 +22,15 @@ header {
     background-color: black;
     color: white;
     max-width: 100%;
-    min-height: 300px;
+    min-height: 200px;
     text-align: center;
+    font-size: 7vw;
 }
 
-;
 
-header p {
+header  p {
     padding-bottom: 50px;
-    font-size: 1.7em;
+    font-size: 0.2em;
 }
 
 a {
@@ -47,7 +47,7 @@ a:hover {
 h1 {
     margin: 0px;
     padding-top: 50px;
-    font-size: 8em;
+    font-size: 1.3em;
     font-variant: small-caps;
     font-family: 'cordel', sans-serif;
 }
@@ -58,7 +58,7 @@ section {
     padding-left: 14px;
     padding-top: 50px;
     font-family: 'Merienda', sans-serif;
-    font-size: 2em;
+    font-size: 2.1vw;
 }
 
 section p {
@@ -80,7 +80,8 @@ section p {
 .image>p {
     background-color: rgba(0, 0, 0, 0.336);
     color: white;
-    max-width: 500px;
+    display: inline-block;
+    padding: 5px;
     border-radius: 10px;
 }
 
@@ -101,8 +102,6 @@ footer {
     color: white;
     padding: 4px;
     text-align: center;
-    font-size: 1.2em;
-    font-style: italic;
-    font-family: sans-serif;
-
+    font-size: 1.5vw;
+    font-family:  'Merienda', sans-serif;
 }
