@@ -15,12 +15,14 @@
             height: 200px;
             border-collapse: collapse;
         }
+        tbody tr:nth-child(even){
+            background-color: lightgray;
+        }
         td,th{
             border: 1px solid black;
             padding: 10px;
             text-align: center;
-            background-color: indigo;
-            color: white;
+            color: black
         }
 
         .title{
@@ -31,16 +33,23 @@
         td{
             font-style: bolder;
         }
-        thead  th{
+        thead th{
             text-align: center;
             vertical-align: middle;
-            background-color: darkgreen;
             color: white;
+            background-color: rgba(0, 0, 0, 0.74);
+        }
+
+        tfoot th{
+            color: white;
+            background-color:rgba(0, 0, 0, 0.74);
         }
 
         tfoot td{
-            background-color: crimson;
+            color: white;
+            background-color:rgba(0, 0, 0, 0.74);
         }
+
     </style>
 </head>
 
@@ -49,8 +58,8 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 60px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -165,7 +174,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de habitantes</td>
+                <th scope="row">Total de habitantes</th>
                 <td>204.903.735</td>
             </tr>
         </tfoot>
