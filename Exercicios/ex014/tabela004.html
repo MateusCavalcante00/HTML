@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+        }
+        
+        td,th{
+            border: 2px solid black;
+            padding: 5px;
+            color: white;
+        }
+
+        .col-nome{
+            text-align: left;
+            background-color: blue;
+        }
+
+        .col-sexo{
+            text-align: center;
+            background-color: blueviolet;
+        }
+
+        .col-idade{
+            text-align: center;
+            background-color: chocolate;
+        }
+
+        .col-prof{
+            text-align: center;
+            background-color: darkred;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Exercicio de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="col-nome">
+            <col class="col-sexo">
+            <col class="col-idade">
+            <col class="col-prof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Suzana Cavalcante</td>
+            <td>Feminino</td>
+            <td>31</td>
+            <td>Atendente de Farmácia</td>
+        </tr>
+        <tr>
+            <td>Mateus Cavalcante</td>
+            <td>Masculino</td>
+            <td>25</td>
+            <td>Desenvolvedor Back-End</td>
+        </tr>
+        <tr>
+            <td>Suely Bezerra</td>
+            <td>Feminino</td>
+            <td>58</td>
+            <td>Auxiliar geral</td>
+        </tr>
+        <tr>
+            <td>Henrique Rodrigues</td>
+            <td>Masculino</td>
+            <td>56</td>
+            <td>Vigilante</td>
+        </tr>
+    </table>
+</body>
+
+</html>
