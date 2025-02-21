@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: darkgray;
+        }
+    </style>
+    <title>JS</title>
+</head>
+<body>
+    <a href="#" id="link">Clique em mim</a>
+    <div id="saida"></div>
+
+    <script>
+        document.getElementById("link").addEventListener("click", () => {
+            const p = document.createElement("p");
+            p.textContent = "Você clicou!";
+            document.getElementById("saida").appendChild(p)
+        })
+    </script>
+</body>
+</html>
