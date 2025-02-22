@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 5</title>
+    <style>
+         label,
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Praticando formulários</h1>
+
+    <form action="cadastro.js" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+           <input type="radio" name="sexo" checked id="fem"> <label for="fem">Feminino</label><br>
+
+           <input type="radio" name="sexo" id="masc"> <label for="masc">Masculino</label><br>
+        </fieldset>
+
+        <br><br>
+
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="fut"  checked><label for="fut" >Futebol</label><br>
+            <input type="checkbox" name="basquete" id="basquete"><label for="basquete">Basquete</label><br>
+            <input type="checkbox" name="futsal" id="futsal"><label for="futsal">Futsal</label><br>
+            <input type="checkbox" name="volei" id="volei"><label for="volei">Vôlei</label><br>
+        </fieldset>
+
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+
+</html>
