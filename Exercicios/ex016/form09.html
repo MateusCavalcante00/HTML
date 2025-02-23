@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 9</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <form action="cadastro.js" method="get" autocomplete="on">
+
+        <p>
+            <label for="inum">Numero:</label>
+            <input type="range" name="num" id="inum" min="0" max="40" value="20" oninput="val.innerHTML = Number(inum.value)" >
+            <output id="val">20</output>
+        </p>
+
+    </form>
+</body>
+</html>
